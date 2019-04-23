@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Labfrontend": {
+    "LabFrontend": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Labfrontend",
+            "outputPath": "dist/LabFrontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Labfrontend:build"
+            "browserTarget": "LabFrontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Labfrontend:build:production"
+              "browserTarget": "LabFrontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Labfrontend:build"
+            "browserTarget": "LabFrontend:build"
           }
         },
         "test": {
@@ -112,7 +112,7 @@
         }
       }
     },
-    "Labfrontend-e2e": {
+    "LabFrontend-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -121,11 +121,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Labfrontend:serve"
+            "devServerTarget": "LabFrontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Labfrontend:serve:production"
+              "devServerTarget": "LabFrontend:serve:production"
             }
           }
         },
@@ -141,5 +141,5 @@
       }
     }
   },
-  "defaultProject": "Labfrontend"
+  "defaultProject": "LabFrontend"
 }
